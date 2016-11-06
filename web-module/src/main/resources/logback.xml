@@ -11,6 +11,12 @@
     <logger name="org" level="TRACE" additivity="false">
         <appender-ref ref="STDOUT" />
     </logger>
+    <logger name="log4j.logger.org.hibernate.SQL" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <logger name="log4j.logger.org.hibernate.type" level="TRACE" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
 
     <root level="TRACE">
         <appender-ref ref="STDOUT" />
